@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    background-color: #F8F8F8;
+}
+
+
+@font-face {
+    font-family: "TTLakesBold";
+    src: url(fonts/TTLakes-Bold.ttf);
+}
+
+@font-face {
+    font-family: "TTLakesMedium";
+    src: url(fonts/TTLakes-Medium.ttf);
+}
+
+@font-face {
+    font-family: "TTLakesRegular";
+    src: url(fonts/TTLakes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "TTLakesThin";
+    src: url(fonts/TTLakes-Thin.ttf);
+}
+
+.header__title {
+    padding: 16px;
+    background-image: linear-gradient(to right, #F8F8F8, #FFFFFF);
+    border-top: 1px solid #D9FFF5;
+    font-family: TTLakesThin, 'sans-serif';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    color: #7E7E82;
+}
+.brands-list {
+   
+    margin-bottom: 40px;
+    
+}
+
+.brands-list__item {
+    background-color: #FFFFFF;
+    width: 240px;
+    height: 72px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    background-image: url(images/back.svg) ;
+    background-repeat: no-repeat;
+    background-position: 180px 15px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-right: 16px;
+ }
+
+
+
+ .brands-list__link {
+    width: 240px;
+ }
+
+ .showButton--hidden {
+    display: none;
+ }
+.hidden {
+    display: none;
+}
+ 
+ .showButton__item {
+    width: 134px;
+    height: 24px;
+    border: 0;
+    background-color: #F8F8F8;
+    font-family: TTLakesMedium, 'sans-serif';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    margin-left: 24px;
+    cursor: pointer;
+ }
+
+ .showButton--show {
+    background-image: url(images/expand.svg);
+    background-repeat: no-repeat;
+    text-align: right;
+ }
+
+ .showButton--hide {
+    background-image: url(images/show.svg);
+    background-repeat: no-repeat;
+
+ }
+ 
+ @media (min-width:768px) {
+    .brands-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands-list__item {
+        margin: 16px;
+        margin-right: 0;
+    }
+ }
