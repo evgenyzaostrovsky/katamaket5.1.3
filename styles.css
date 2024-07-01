@@ -41,7 +41,7 @@ body, html {
     color: #7E7E82;
 }
 .brands-list {
-   
+    margin-left: 32px;
     margin-bottom: 40px;
     
 }
@@ -111,5 +111,14 @@ body, html {
     .brands-list__item {
         margin: 16px;
         margin-right: 0;
+    }
+ }
+
+ @media (min-width: 1120px) {
+    body {
+        width: 1120px;
+    }
+    .header {
+        width: 1120px;
     }
  }
